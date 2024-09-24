@@ -1,25 +1,98 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel='stylesheet' href='index.css'>
-<link rel="icon" href="images/e.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eranda Somathilake</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: transparent;
+            padding: 20px;
+            margin: 0; /* Remove default margin */
+        }
+        .header {
+            display: flex; /* Use flexbox for layout */
+            align-items: flex-start; /* Align items to the left */
+            margin-bottom: 20px;
+            margin-top: 40px; /* Add space from the top of the page */
+        }
+        .profile-image {
+            width: 200px; /* Increased width */
+            height: 200px; /* Increased height */
+            border-radius: 50%; /* Make it circular */
+            overflow: hidden;
+            margin-top: 8px;
+            object-fit: cover; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between image and text */
+        }
+        h1 {
+            margin: 0; /* Remove default margin */
+        }
+        h2 {
+            margin-top: 40px;
+            color: #4A4A4A;
+        }
+        .intro {
+            margin-top: 15px; /* Space above the introduction */
+            flex: 1; /* Allow the paragraph to take available space */
+        }
+        p {
+            margin-bottom: 10px; /* Reduced margin below paragraphs */
+            font-size: 1.1em;
+            line-height: 1.5; /* Improve readability */
+            color: #4A4A4A;
+        }
+        .personal-details {
+            margin-top: 5px; /* Space above personal details */
+            text-align: left; /* Align text to the left */
+        }
+        ul {
+            margin: 20px 0;
+            padding-left: 20px; /* Adjusted for better alignment */
+            list-style-type: none; /* No bullets */
+        }
+        ul li {
+            margin-bottom: 10px; /* Space between items */
+            background-color: #ffffff; /* White background for each item */
+            padding: 10px;
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        a {
+            color: #007BFF; /* Link color */
+            text-decoration: none; /* No underline */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
 </head>
 <body>
-<h1>Eranda Somathilake</h1>
-<div>
-<img src="images/es.jpg" alt="profile_pic" width="200" align="right" id="dp"/>
-<h2>Biography</h2>
-<p>I am a B.Sc Enginnering graduate from Faculty of Engineering, University of Peradeniya in Mechanical Engineering. Currently working as a temporary instructor and a volunteering research assistant at University of Peradeniya.</p>
-<h2>Personal Details</h2>
-<p> Contact information: <a href="mailto:somathilake.eranda@gmail.com">somathilake.eranda@gmail.com</a>
-<p><a href="https://github.com/eranda-s/">Github</a> | <a href="https://www.linkedin.com/in/eranda-somathilake-795192182">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=5GFBmMYAAAAJ&hl=en">Google scholar</a></p>
-<h2>Publications</h2>
- <ul>
-  <li>Assessment of Fetal and Maternal Well-Being During Pregnancy Using Passive Wearable Inertial Sensor [<a href="https://arxiv.org/abs/2111.10066">link</a>]
-  <li>Fetal Movement Identification from Multi Accelerometer Measurements using Recurrent Neural Networks In-press
-  <li>Fetal Movement Detection using Long Short-Term Memory Network [<a href="https://ieeexplore.ieee.org/document/9606131">link</a>]
-  <li>Comprehensive Study on Denoising of Medical Images Utilizing Neural Network Based Auto-Encoder [<a href="https://arxiv.org/abs/2102.01903">link</a>]
- </ul>
- </div>
+    <div class="header">
+        <img src="assets/profile.jpg" alt="Eranda Somathilake" class="profile-image" />
+        <div class="intro">
+            <h1>Eranda Somathilake</h1>
+            <p>
+                I am a Phd candidate from the Department of Mechanical and Aerospace Engineering, University of Califonia, San Diego. My research intrests include control of flow in rivers and canals considering ecological preservation, non-linear control, and control of PDEs. 
+            </p>
+            <div class="personal-details">
+                <p>email: <a href="mailto:somathilake.eranda@gmail.com">somathilake.eranda@gmail.com</a></p>
+                <p>
+                    <a href="https://www.linkedin.com/in/eranda-somathilake-795192182">LinkedIn</a> | 
+                    <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=ALUCkoVE7tr4OzwxUwIk7pomvTTLXa5x3cpDEwginoMC3NADdk-f_3AXYW-uPDyAOitz81DKuJUs3ZJ3qiBg5g0H9i_n&user=auPfHncAAAAJ">Google Scholar</a> |
+                    <a href="https://github.com/eranda-s/">Github</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Publications</h2>
+    <ul>
+        <li>Assessment of Fetal and Maternal Well-Being During Pregnancy Using Passive Wearable Inertial Sensor [<a href="https://arxiv.org/abs/2111.10066">link</a>]</li>
+        <li>Fetal Movement Identification from Multi Accelerometer Measurements using Recurrent Neural Networks <i>[In-press]</i></li>
+        <li>Fetal Movement Detection using Long Short-Term Memory Network [<a href="https://ieeexplore.ieee.org/document/9606131">link</a>]</li>
+        <li>Comprehensive Study on Denoising of Medical Images Utilizing Neural Network Based Auto-Encoder [<a href="https://arxiv.org/abs/2102.01903">link</a>]</li>
+    </ul>
 </body>
-</html> 
+</html>
