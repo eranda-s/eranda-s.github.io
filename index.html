@@ -1,98 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eranda Somathilake</title>
-    <style>
-        body {
-            font-family: "Poppins", sans-serif;
-            background-color: transparent;
-            padding: 20px;
-            margin: 0; /* Remove default margin */
-        }
-        .header {
-            display: flex; /* Use flexbox for layout */
-            align-items: flex-start; /* Align items to the left */
-            margin-bottom: 20px;
-            margin-top: 40px; /* Add space from the top of the page */
-        }
-        .profile-image {
-            width: 200px; /* Increased width */
-            height: 200px; /* Increased height */
-            border-radius: 50%; /* Make it circular */
-            overflow: hidden;
-            margin-top: 8px;
-            object-fit: cover; /* Maintain aspect ratio */
-            margin-right: 20px; /* Space between image and text */
-        }
-        h1 {
-            margin: 0; /* Remove default margin */
-        }
-        h2 {
-            margin-top: 40px;
-            color: #4A4A4A;
-        }
-        .intro {
-            margin-top: 15px; /* Space above the introduction */
-            flex: 1; /* Allow the paragraph to take available space */
-        }
-        p {
-            margin-bottom: 10px; /* Reduced margin below paragraphs */
-            font-size: 1.1em;
-            line-height: 1.5; /* Improve readability */
-            color: #4A4A4A;
-        }
-        .personal-details {
-            margin-top: 5px; /* Space above personal details */
-            text-align: left; /* Align text to the left */
-        }
-        ul {
-            margin: 20px 0;
-            padding-left: 20px; /* Adjusted for better alignment */
-            list-style-type: none; /* No bullets */
-        }
-        ul li {
-            margin-bottom: 10px; /* Space between items */
-            background-color: #ffffff; /* White background for each item */
-            padding: 10px;
-            border-radius: 5px; /* Rounded corners */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-        a {
-            color: #007BFF; /* Link color */
-            text-decoration: none; /* No underline */
-        }
-        a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
-    </style>
+
+    <!-- Professional academic fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="header">
-        <img src="assets/profile.jpg" alt="Eranda Somathilake" class="profile-image" />
-        <div class="intro">
+<div class="page">
+
+    <!-- HEADER (IMAGE ON LEFT) -->
+    <header>
+        <div class="header-image">
+            <img src="assets/profile.jpg" alt="Eranda Somathilake" style="transform: scale(1);transform-origin: center;">
+        </div>
+
+        <div class="header-text">
             <h1>Eranda Somathilake</h1>
-            <p>
-                I am a Phd candidate from the Department of Mechanical and Aerospace Engineering, University of Califonia, San Diego. My research intrests include control of flow in rivers and canals considering ecological preservation, non-linear control, and control of PDEs. 
+
+            <p class="affiliation">
+                PhD Candidate<br>
+                Department of Mechanical and Aerospace Engineering<br>
+                University of California, San Diego
             </p>
-            <div class="personal-details">
-                <p>email: <a href="mailto:somathilake.eranda@gmail.com">somathilake.eranda@gmail.com</a></p>
+
+            <p class="research-summary">
+                My research focuses on control of flow in rivers and canals with ecological preservation,
+                nonlinear control, and control of partial differential equations.
+            </p>
+            <div class="contact-emails">
+                <h3>Contact Emails</h3>
                 <p>
-                    <a href="https://www.linkedin.com/in/eranda-somathilake-795192182">LinkedIn</a> | 
-                    <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=ALUCkoVE7tr4OzwxUwIk7pomvTTLXa5x3cpDEwginoMC3NADdk-f_3AXYW-uPDyAOitz81DKuJUs3ZJ3qiBg5g0H9i_n&user=auPfHncAAAAJ">Google Scholar</a> |
-                    <a href="https://github.com/eranda-s/">Github</a>
+                    <strong>Personal:</strong> 
+                    <a href="mailto:somathilake.eranda@gmail.com">somathilake.eranda@gmail.com</a>
+                </p>
+                <p>
+                    <strong>Work:</strong> 
+                    <a href="mailto:eranda@ucsd.edu">eranda@ucsd.edu</a>
+                    ,
+                    <a href="mailto:esomathilake@ucsd.edu">esomathilake@ucsd.edu</a>
                 </p>
             </div>
-        </div>
-    </div>
 
-    <h2>Publications</h2>
-    <ul>
-        <li>Assessment of Fetal and Maternal Well-Being During Pregnancy Using Passive Wearable Inertial Sensor [<a href="https://arxiv.org/abs/2111.10066">link</a>]</li>
-        <li>Fetal Movement Identification from Multi Accelerometer Measurements using Recurrent Neural Networks <i>[In-press]</i></li>
-        <li>Fetal Movement Detection using Long Short-Term Memory Network [<a href="https://ieeexplore.ieee.org/document/9606131">link</a>]</li>
-        <li>Comprehensive Study on Denoising of Medical Images Utilizing Neural Network Based Auto-Encoder [<a href="https://arxiv.org/abs/2102.01903">link</a>]</li>
-    </ul>
+            <p class="links">
+                <a href="https://scholar.google.com/citations?user=auPfHncAAAAJ">Google Scholar</a> ·
+                <a href="https://github.com/eranda-s/">GitHub</a> ·
+                <a href="https://www.linkedin.com/in/eranda-somathilake-795192182">LinkedIn</a> ·
+                <a href="./assets/Eranda_Somathilake_CV.pdf">CV</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- RESEARCH INTERESTS -->
+    <section>
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Control of open-channel flows</li>
+            <li>Nonlinear control and PDE systems</li>
+            <li>Ecological flow preservation</li>
+        </ul>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section>
+        <h2>Publications</h2>
+
+        <ol class="publications">
+            <li>
+                Output Feedback Periodic Event-Triggered and Self-Triggered Boundary Control of Coupled 2 × 2 Linear Hyperbolic PDEs.<br>
+                <span class="authors">Eranda Somathilake; Bhathiya Rathnayake; Mamadou Diagne. </span><br>
+                <span class="venue">Automatica, 2025.</span>
+                [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0005109825003279" target="_blank">paper</a>]
+                [<a href="https://arxiv.org/abs/2404.02298" target="_blank">arXiv</a>]
+                [<a href="#" onclick="toggleBib('bibsomathilake_2025'); return false;">bibTeX</a>]
+                <p class="paper-desc">
+                    An observer-based periodic event-triggered and self-triggered boundary control schemes are presented for a class of 2 × 2 linear hyperbolic PDEs. The control input is applied in a zero-order hold fashion between events determined by the triggering conditinos. Under periodic event-triggered control, the triggering condition is monitored periodically and under self-triggered control, the next event time is determined at the current event-time.
+                </p>
+
+                <pre id="bibsomathilake_2025" class="bibtex">
+@article{somathilake_2025,
+title = {Output feedback periodic event-triggered and self-triggered boundary control of coupled 2 × 2 linear hyperbolic PDEs},
+journal = {Automatica},
+volume = {179},
+pages = {112433},
+year = {2025},
+issn = {0005-1098},
+doi = {https://doi.org/10.1016/j.automatica.2025.112433},
+url = {https://www.sciencedirect.com/science/article/pii/S0005109825003279},
+author = {Eranda Somathilake and Bhathiya Rathnayake and Mamadou Diagne},
+keywords = {Backstepping control design, Coupled hyperbolic systems, Observer design, Periodic event-triggered control, Self-triggered control, Saint-Venant model}}</pre>
+            </li>
+            <li>
+                Output Feedback Periodic Event-triggered Control of Coupled 2 × 2 Linear Hyperbolic PDEs.<br>
+                <span class="authors">Eranda Somathilake; Bhathiya Rathnayake; Mamadou Diagne. </span><br>
+                <span class="venue">American Control Conference, Denver, USA (ACC), 2025.</span>
+                [<a href="https://ieeexplore.ieee.org/abstract/document/11108057" target="_blank">paper</a>]
+                [<a href="#" onclick="toggleBib('bibsomathilakeacc_2025'); return false;">bibTeX</a>]
+                <p class="paper-desc">
+                    Proposes an observer-based periodic event-triggered boundart control stratergy for a class of 2 × 2 linear hyperbolic PDEs where the control is updated at the control input is applied in a zero-order hold fashion between events by periodically monitoring a triggering function. This facilitates the controller to be implemented in a digital platform.
+                </p>
+
+                <pre id="bibsomathilakeacc_2025" class="bibtex">
+@INPROCEEDINGS{somathilakeacc_2025,
+author={Somathilake, Eranda and Rathnayake, Bhathiya and Diagne, Mamadou},
+booktitle={2025 American Control Conference (ACC)}, 
+title={Output Feedback Periodic Event-triggered Control of Coupled 2 × 2 Linear Hyperbolic PDEs}, 
+year={2025},
+volume={},
+number={},
+pages={990-995},
+keywords={Upper bound;Event detection;Partial differential equations;Observers;Reflection;Sensors;Closed loop systems;PD control;Monitoring;Output feedback},
+doi={10.23919/ACC63710.2025.11108057}}</pre>
+
+            </li>
+
+
+            <li>
+                Output Feedback Control of Suspended Sediment Load Entrainment in Water Canals and Reservoirs.<br>
+                <span class="authors">Eranda Somathilake; Mamadou Diagne. </span><br>
+                <span class="venue">The 4th Modeling, Estimation, and Control Conference, Chicago, USA (MECC), 2024.</span>
+                [<a href="https://www.sciencedirect.com/science/article/pii/S2405896325001247" target="_blank">paper</a>]
+                [<a href="https://arxiv.org/html/2403.15998v1" target="_blank">arXiv</a>]
+                [<a href="#" onclick="toggleBib('bibsomathilake_2024'); return false;">bibTeX</a>]
+
+                <p class="paper-desc">
+                    Adresses the management of water flow in a rectangular open channel, considering the dynamic nature of both the channel's bathymetry and the suspended sediment particles caused by entrainment and deposition effects.
+                </p>
+                
+                <pre id="bibsomathilake_2024" class="bibtex">
+@article{somathilake_2024,
+title = {Output Feedback Control of Suspended Sediment Load Entrainment in Water Canals and Reservoirs},
+journal = {IFAC-PapersOnLine},
+volume = {58},
+number = {28},
+pages = {983-988},
+year = {2024},
+note = {The 4th Modeling, Estimation, and Control Conference – 2024},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2025.01.124},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896325001247},
+author = {Eranda Somathilake and Mamadou Diagne},
+keywords = {Output-feedback design, PDE Backstepping control, Lyapunov methods, Hyperbolic PDEs, Water flows, Environmental systems}}</pre>                    
+            </li>
+
+            <li>
+                Assessment of Fetal and Maternal Well-Being During Pregnancy Using Passive Wearable Inertial Sensor.<br>
+                <span class="authors">Eranda Somathilake; Upekha Hansanie Delay; Janith Bandara Senanayaka; Samitha Lakmal Gunarathne; Roshan Indika Godaliyadda; Mervyn Parakrama Ekanayake; Janaka Wijayakulasooriya; Chathura Rathnayake.</span><br>
+                <span class="venue">IEEE Transactions on Instrumentation and Measurement, 2022.</span>
+                [<a href="https://ieeexplore.ieee.org/document/9774333" target="_blank">paper</a>]
+                [<a href="https://arxiv.org/abs/2111.10066" target="_blank">arXiv</a>]
+                [<a href="#" onclick="toggleBib('bibsomathilake_2022'); return false;">bibTeX</a>]
+
+                <p class="paper-desc">
+                    Proposes a passive wearable sensing framework for assessing fetal and maternal well-being
+                    using inertial sensor data, validated on real-world pregnancy monitoring scenarios.
+                </p>
+
+                <pre id="bibsomathilake_2022" class="bibtex">
+@ARTICLE{somathilake_2022,
+author={Somathilake, Eranda and Delay, Upekha Hansanie and Senanayaka, Janith Bandara and Gunarathne, Samitha Lakmal and Godaliyadda, Roshan Indika and Ekanayake, Mervyn Parakrama and Wijayakulasooriya, Janaka and Rathnayake, Chathura},
+journal={IEEE Transactions on Instrumentation and Measurement}, 
+title={Assessment of Fetal and Maternal Well-Being During Pregnancy Using Passive Wearable Inertial Sensor}, 
+year={2022},
+volume={71},
+number={},
+pages={1-11},
+keywords={Accelerometers;Monitoring;Fetus;Pregnancy;Time-domain analysis;Time-frequency analysis;Pediatrics;Accelerometers;breathing patterns;deep learning;fast Fourier transform;fetal health;fetal movement;wavelet transform;wiener filtering},
+doi={10.1109/TIM.2022.3175041}}</pre>
+            </li>
+
+            <li>
+                Fetal Movement Identification from Multi-Accelerometer Measurements using Recurrent Neural Networks.<br>
+                <span class="authors">Janith Bandara Senanayaka; Eranda Somathilake; Upekha Hansanie Delay; Samitha Lakmal Gunarathne; Roshan Indika Godaliyadda; Mervyn Parakrama Ekanayake; Janaka Wijayakulasooriya; Chathura Rathnayake.</span><br>
+                <span class="venue">2021 IEEE 16th International Conference on Industrial and Information Systems (ICIIS).</span>
+                [<a href="https://ieeexplore.ieee.org/document/9660747" target="_blank">paper</a>]
+                [<a href="#" onclick="toggleBib('bibsenanayake_2021'); return false;">bibtex</a>]
+                <p class="paper-desc">
+                    Investigates recurrent neural network models for identifying fetal movements from
+                    multi-accelerometer data with improved detection accuracy.
+                </p>
+                <pre id="bibsenanayake_2021" class="bibtex">
+@INPROCEEDINGS{senanayake_2021,
+author={Senanayaka, Janith Bandara and Somathilake, Eranda and Delay, Upekha and Gunarathne, Samitha and Godaliyadda, Roshan and Ekanayake, Parakrama and Wijayakulasooriya, Janaka and Rathnayake, Chathura},
+booktitle={2021 IEEE 16th International Conference on Industrial and Information Systems (ICIIS)}, 
+title={Fetal Movement Identification from Multi-Accelerometer Measurements using Recurrent Neural Networks},
+year={2021},
+volume={},
+number={},
+pages={215-220},
+keywords={Performance evaluation;Accelerometers;Pregnancy;Recurrent neural networks;Medical devices;Measurement units;Loss measurement;Fetal movements;accelerometer;inertial measurement unit;multi-sensor;spectrogram;recurrent neural network},
+doi={10.1109/ICIIS53135.2021.9660747}}
+                </pre>
+            </li>
+
+            <li>
+                Fetal Movement Detection using Long Short-Term Memory Network.<br>
+                <span class="authors">Eranda Somathilake; Janith Bandara Senanayaka; Upekha Hansanie Delay; Samitha Lakmal Gunarathne; Thoshara Nawarathne; Thanushi Withanage; Roshan Indika Godaliyadda; Mervyn Parakrama Ekanayake; Janaka Wijayakulasooriya; Chathura Rathnayake.</span><br>
+                <span class="venue">2021 10th International Conference on Information and Automation for Sustainability (ICIAfS), 2021.</span>
+                [<a href="https://ieeexplore.ieee.org/document/9606131" target="_blank">paper</a>]
+                [<a href="#" onclick="toggleBib('bibsomathilake_2021'); return false;">bibtex</a>]
+                <p class="paper-desc">
+                    Presents an LSTM-based framework for robust fetal movement detection addressing noise
+                    and signal variability.
+                </p>
+                <pre id="bibsomathilake_2021" class="bibtex">
+@INPROCEEDINGS{somathilake_2021,
+author={Somathilake, Eranda and Senanayaka, Janith Bandara and Delay, Upekha and Gunarathne, Samitha and Nawarathne, Thoshara and Withanage, Thanushi and Godaliyadda, Roshan and Ekanayake, Parakrama and Wijayakulasooriya, Janaka and Rathnayake, Chathura},
+booktitle={2021 10th International Conference on Information and Automation for Sustainability (ICIAfS)}, 
+title={Fetal Movement Detection using Long Short-Term Memory Network}, 
+year={2021},
+volume={},
+number={},
+pages={464-469},
+keywords={Accelerometers;Training;Pregnancy;Performance evaluation;Recurrent neural networks;Tracking;Reliability;Fetal movement;neural network;LSTM;accelerometer;spectrogram},
+doi={10.1109/ICIAfS52090.2021.9606131}}</pre>
+            </li>
+
+            <li>
+                Comprehensive Study on Denoising of Medical Images Utilizing Neural Network Based Auto-Encoder.<br>
+                <span class="authors">Thoshara Nawarathne; Thanushi Withanage; Samitha Lakmal Gunarathne; Upekha Hansanie Delay; Eranda Somathilake; Janith Bandara Senanayaka; Roshan Indika Godaliyadda; Mervyn Parakrama Ekanayake; Chathura Rathnayake; Janaka Wijayakulasooriya.</span><br>
+                <span class="venue">Advanced Computational Paradigms and Hybrid Intelligent Computing(ICACCP), 2021.</span>
+                [<a href="https://link.springer.com/chapter/10.1007/978-981-16-4369-9_17" target="_blank">paper</a>]
+                [<a href="https://arxiv.org/abs/2102.01903" target="_blank">arXiv</a>]
+                [<a href="#" onclick="toggleBib('bibnawarathne_2021'); return false;">bibtex</a>]
+                <p class="paper-desc">
+                    Provides a comparative study of auto-encoder architectures for medical image denoising
+                    across different noise models.
+                </p>
+                <pre id="bibnawarathne_2021" class="bibtex">
+@InProceedings{nawarathne_2021,
+author="Nawarathne, Thoshara and Withanage, Thanushi and Gunarathne, Samitha and Delay, Upekha and Somathilake, Eranda and Senanayake, Janith and Godaliyadda, Roshan and Ekanayake, Parakrama and Rathnayake, Chathura and Wijayakulasooriya, Janaka",
+editor="Gandhi, Tapan Kumar and Konar, Debanjan and Sen, Biswaraj and Sharma, Kalpana",
+title="Comprehensive Study on Denoising of Medical Images Utilizing Neural Network-Based Autoencoder",
+booktitle="Advanced Computational Paradigms and Hybrid Intelligent Computing ",
+year="2022",
+publisher="Springer Singapore",
+address="Singapore",
+pages="159--170",
+isbn="978-981-16-4369-9"}</pre>
+            </li>
+
+        </ol>
+    </section>
+<!--
+     NEWS
+    <section>
+        <h2>News</h2>
+        <ul class="news">
+            <li><strong>2025:</strong> Submitted journal paper on nonlinear flow control.</li>
+            <li><strong>2024:</strong> Presented work at an international control conference.</li>
+        </ul>
+    </section>
+-->
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Eranda Somathilake
+    </footer>
+
+</div>
+
+<!-- BibTeX toggle -->
+<script>
+function toggleBib(id) {
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "block") ? "none" : "block";
+}
+</script>
+
 </body>
 </html>
