@@ -81,6 +81,12 @@ section h2 {
     padding-bottom: 4px;
 }
 
+/* ==== CATEGORY ==== */
+.category {
+    font-weight: 500;
+    color: #333;
+}
+
 /* ===== PUBLICATIONS ===== */
 .publications {
     padding-left: 24px;
@@ -163,4 +169,3 @@ footer {
         height: auto;
     }
 }
-
